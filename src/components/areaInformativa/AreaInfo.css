@@ -1,0 +1,76 @@
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #ffffff 0%, #b9c7a3 100%);
+  }
+  
+  .headerArea {
+    background: linear-gradient(to bottom, #234703a9 0%, #4e554b44 100%);
+    position: relative;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 #00000033
+  }
+  
+  .background-image {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 2px;
+  }
+  
+  .background-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #234703a9 0%, #4e554b44 100%);
+    pointer-events: none;
+  }
+  
+
+  .overlay-text {
+    position: absolute;
+    max-width: 50%;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #ffffff; /* TROCAR */
+
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000; /* horizontal, vertical, blur, cor */
+
+
+  }
+  
+  .main-content {
+    background-color: #ffffff;
+    width: 55%;
+    margin: 5% auto;
+    padding: 1%;
+    align-items: center; 
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.15em;
+    font-family: Georgia, 'Times New Roman', Times, serif,'Times New Roman', Times, serif,
+  }
+  
+  .main-content h1, h2 {
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a4e18;
+  }
+  .main-content p {
+    width: 90%;
+    text-align: left;
+  }
+  
